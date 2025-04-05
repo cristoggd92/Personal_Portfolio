@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #e1e1e1;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* Reset básico para margenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía básica */
+    line-height: 1.6; /* Espaciado de línea */
+    color: #333; /* Color del texto */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
